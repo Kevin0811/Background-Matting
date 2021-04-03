@@ -1,0 +1,5 @@
+*.dll
+*.pth
+*.onnx
+sample_data/
+deeplab_model/

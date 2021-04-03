@@ -16,7 +16,7 @@ from functions import *
 from networks import ResnetConditionHR
 
 torch.set_num_threads(1)
-#os.environ["CUDA_VISIBLE_DEVICES"]="4"
+os.environ["CUDA_VISIBLE_DEVICES"]="0"
 print('CUDA Device: ' + os.environ["CUDA_VISIBLE_DEVICES"])
 
 
@@ -32,7 +32,7 @@ parser.add_argument('-b', '--back', type=str,default=None,help='Captured backgro
 args=parser.parse_args()
 
 #input model
-model_main_dir='Models/' + args.trained_model + '/';
+model_main_dir='Model/' + args.trained_model + '/';
 #input data path
 data_path=args.input_dir
 
